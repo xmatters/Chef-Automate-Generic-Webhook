@@ -15,8 +15,28 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 # Installation
 Details of the installation go here. 
 
-## Application ABC set up
-Specific steps go here
+## Chef Automate Server
+1. Edit the delivery.rb file on the Chef Automate Server.  See the following instructions to configure the Notifier Settings. [derlivery.rb](http://chef-web-docs-notify.s3-website-us-west-2.amazonaws.com/config_rb_delivery.html#notifier-settings).
+2. The attached delivery.rb file is an example of the configured settings pointing to a xMatters instance.
+3. The following are the ruby lines in the file:
+      notifier['enable']
+      notifier['user_webhook_url']
+4. The following is a sample notification message body:
+      {
+        "automate_fqdn":"automate.test",
+        "failure_snippet":"Chef client run failure on [chef-server.test] centos-runner-1.test : https://failure_url \n Failure Reason\n",
+        "exception_backtrace":"A long string with the backtrace that contains the error and \n",
+        "exception_title":"Error Resolving Cookbooks for Run List:",
+        "exception_message":"412 \"Precondition Failed\"",
+        "automate_failure_url":"automate.test/long/url/that-takes-you-to-run-failure-page",
+        "timestamp_utc":"2017-06-19T19:58:35.000000Z",
+        "start_time_utc":"2017-06-19T19:58:35.000000Z",
+        "end_time_utc":"2017-06-19T19:58:35.000000Z",
+        "node_name":"centos-runner-1.test",
+        "type":"node_failure"
+      }
+
+
 
 ## xMatters set up
 1. Create a new Shared Library or (In|Out)bound integration
