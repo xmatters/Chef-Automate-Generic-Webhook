@@ -2,7 +2,7 @@
 Whether you have five or five thousand servers, Chef lets you manage them all by turning infrastructure into code. Infrastructure described as code is flexible, versionable, human-readable, and testable. Check out the sweet video [here](media/mysweetvideo.mov). 
 
 # Pre-Requisites
-* Chef Server v 3.x or higher.  The Generic Webhook is new functionality.
+* Chef Automate v 3.x or higher.  The Generic Webhook is new functionality.  See the following Chef documentation for instructions on how to configure the Notify settings in the delivery.rb file of the Chef Automate server.  [delivery.rb](http://chef-web-docs-notify.s3-website-us-west-2.amazonaws.com/config_rb_delivery.html#notifier-settings)
 * Generic Webhook configured.  
 * Jenkins Communication Plan (see files) imported into xMatters or created in xMatters.
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
