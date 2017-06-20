@@ -45,9 +45,18 @@ Details of the installation go here.
 4. Configure the xMatters Endpoints. [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm)
 5. Create a DevOps group in xMatters and add your self to the group. [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm).  The name of the DevOps group can be changed in the Inbound IB script.
   
-   
 # Testing
-Be specific. What should happen to make sure this code works? What would a user expect to see?
+Run a Cookbook in Chef.
+<kbd>
+<img src="media/JenkinsConsole.png">
+</kbd>
+
+A message should come through on your devices.  Which ever devices you have configured in xMatters.
+<kbd>
+<img src="media/DeviceMessage.png">
+</kbd>
 
 # Troubleshooting
-Optional section for how to troubleshoot. Especially anything in the source application that an xMatters developer might not know about. 
+View xMatters Activity Stream to determine issues with Jenkins connectivity.
+
+
