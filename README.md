@@ -39,13 +39,12 @@ Details of the installation go here.
 
 
 ## xMatters set up
-1. Create a new Shared Library or (In|Out)bound integration
-2. Add this code here:
-   ```
-   var items = [];
-   items.push( { "stuff": "value"} );
-   console.log( 'Do stuff' );
-   ```
+1. Import the Communication Plan (see files).  If this step is done you can skip steps 2 and 3.
+2. Create a new Shared Library and add the code from the JenkinsLibrary.js file.  
+3. Create (In|Out)bound integration and add the code from the JenkinsIB.js file.
+4. Configure the xMatters Endpoints. [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm)
+5. Create a DevOps group in xMatters and add your self to the group. [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm).  The name of the DevOps group can be changed in the Inbound IB script.
+  
    
 # Testing
 Be specific. What should happen to make sure this code works? What would a user expect to see?
