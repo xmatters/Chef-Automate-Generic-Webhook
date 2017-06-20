@@ -1,32 +1,11 @@
-# Instructions on creating the repo
-[Create the repo](https://help.github.com/articles/create-a-repo/) using your own Github account.
-When you create don't add a README or LICENSE. This will make sure to initialize an empty repo
-
-Open a command line and do the following. Where `MY_NEW_REPO_NAME_HERE` is the name of your github repo and `MY_NEW_REPO_URL` is the url generated when you create the new repo. 
-
-```bash
-# Clone the template repo to the local file system
-git clone https://github.com/xmatters/xm-labs-template.git
-# Change the directory name to avoid confusion and then cd into it
-mv xm-labs-template MY_NEW_REPO_NAME_HERE  
-cd MY_NEW_REPO_NAME_HERE
-# We have to tell git that the place it needs to push is not where it came from
-git remote set-url origin https://MY_NEW_REPO_URL.git
-# Pust to the remote repo
-git push -u origin master
-```
-
-Then, edit all your files and drop any new ones into the `MY_NEW_REPO_NAME_HERE` directory. Once you are finished, let Travis know and he will then fork it to the xMatters account and update the necessary links in the xM Labs main page. From there if you update your repo, those changes can be merged into the xMatters account repo and everything will be kept up to date!
-
-# Template below:
----
-
-# Product Name Goes Here
-A note about what the product is and what this integration/scriptlet is all about. Check out the sweet video [here](media/mysweetvideo.mov). 
+# Chef Generic Webhook
+Whether you have five or five thousand servers, Chef lets you manage them all by turning infrastructure into code. Infrastructure described as code is flexible, versionable, human-readable, and testable. Check out the sweet video [here](media/mysweetvideo.mov). 
 
 # Pre-Requisites
-* Version 453 of App XYZ
-* Account in Application ABC
+* Chef Server v 3.x or higher.  The Generic Webhook is new functionality.
+* Generic Webhook configured.  
+* Jenkins Communication Plan (see files) imported into xMatters or created in xMatters.
+* xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
