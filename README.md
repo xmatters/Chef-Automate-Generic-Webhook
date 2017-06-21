@@ -38,6 +38,7 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
              "node_name":"centos-runner-1.test",
              "type":"node_failure"
         }
+        
         ```
 5. Restart the Chef Automate server after saving the delivery.rb file.
 
