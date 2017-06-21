@@ -25,6 +25,7 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 4. The following is a sample notification message body:
 
       ``` 
+      
       {
               "automate_fqdn":"automate.test",
               "failure_snippet":"Chef client run failure on [chef-server.test] centos-runner-1.test : https://failure_url \n Failure Reason\n",
