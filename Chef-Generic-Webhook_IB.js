@@ -1,4 +1,5 @@
-/* Inbound IB to parse the information coming from a Chef Automate Generic Webhook
+/* Inbound IB to parse the information coming from a Chef Automate Generic Webhook.  Link to Chef Notifier documentation for formatting instructions.
+http://chef-web-docs-notify.s3-website-us-west-2.amazonaws.com/config_rb_delivery.html#notifier-settings
 */
 
 var data;
