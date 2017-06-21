@@ -18,22 +18,24 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 2. The attached delivery.rb file is an example of the configured settings pointing to a xMatters instance.
 3. The following are the ruby lines in the file:
       ``` notifier['enable']
-      ``` notifier['user_webhook_url'] 
+          notifier['user_webhook_url'] 
+      ```
 4. The following is a sample notification message body:
 
       ``` {
-      ```  "automate_fqdn":"automate.test",
-      ```  "failure_snippet":"Chef client run failure on [chef-server.test] centos-runner-1.test : https://failure_url \n Failure Reason\n",
-      ``` "exception_backtrace":"A long string with the backtrace that contains the error and \n",
-      ```  "exception_title":"Error Resolving Cookbooks for Run List:",
-      ```  "exception_message":"412 \"Precondition Failed\"",
-      ```  "automate_failure_url":"automate.test/long/url/that-takes-you-to-run-failure-page",
-      ```  "timestamp_utc":"2017-06-19T19:58:35.000000Z",
-      ```  "start_time_utc":"2017-06-19T19:58:35.000000Z",
-      ```  "end_time_utc":"2017-06-19T19:58:35.000000Z",
-      ```  "node_name":"centos-runner-1.test",
-      ```  "type":"node_failure"
-      ``` }
+              "automate_fqdn":"automate.test",
+              "failure_snippet":"Chef client run failure on [chef-server.test] centos-runner-1.test : https://failure_url \n Failure Reason\n",
+             "exception_backtrace":"A long string with the backtrace that contains the error and \n",
+             "exception_title":"Error Resolving Cookbooks for Run List:",
+             "exception_message":"412 \"Precondition Failed\"",
+             "automate_failure_url":"automate.test/long/url/that-takes-you-to-run-failure-page",
+             "timestamp_utc":"2017-06-19T19:58:35.000000Z",
+             "start_time_utc":"2017-06-19T19:58:35.000000Z",
+             "end_time_utc":"2017-06-19T19:58:35.000000Z",
+             "node_name":"centos-runner-1.test",
+             "type":"node_failure"
+        }
+        ```
 5. Restart the Chef Automate server after saving the delivery.rb file.
 
 
