@@ -5,11 +5,11 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 * Chef Automate v 3.x or higher.  The Generic Webhook is new functionality.  See the following Chef documentation for instructions on how to configure the Notifier settings in the delivery.rb file of the Chef Automate server.  [delivery.rb Chef Help Docs](http://chef-web-docs-notify.s3-website-us-west-2.amazonaws.com/config_rb_delivery.html#notifier-settings)
 * Chef Automate Generic Webhook configured.  
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
-* xMatters Chef Automate - Generic Webhook Communication Plan (see zip file in above files) imported into xMatters or created in xMatters.
+* xMatters ChefAutomateGenericWebhook Communication Plan (see zip file in above files) imported into xMatters or created in xMatters.
 
 # Files
 * [Chef-Generic-Webhook_IB.js](Chef-Generic-Webhook_IB.js) - The javascript file to be pasted into a Shared Library. It generally does xyz. 
-* [Chef Automate - Generic Webhook.zip](Chef Automate - Generic Webhook.zip) - The comm plan (if needed) that has all the cool scripts and email format and such. 
+* [ChefAutomateGenericWebhook.zip](ChefAutomateGenericWebhook.zip) - The comm plan (if needed) that has all the cool scripts and email format and such. 
 
 # Installation
 Details of the installation go here. 
