@@ -17,12 +17,15 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 1. Edit the delivery.rb file on the Chef Automate Server.  See the following instructions to configure the Notifier Settings. [delivery.rb](http://chef-web-docs-notify.s3-website-us-west-2.amazonaws.com/config_rb_delivery.html#notifier-settings).
 2. The attached delivery.rb file is an example of the configured settings pointing to a xMatters instance.
 3. The following are the ruby lines in the file:
-      ``` notifier['enable']
+      ``` 
+          notifier['enable']
           notifier['user_webhook_url'] 
+          
       ```
 4. The following is a sample notification message body:
 
-      ``` {
+      ``` 
+      {
               "automate_fqdn":"automate.test",
               "failure_snippet":"Chef client run failure on [chef-server.test] centos-runner-1.test : https://failure_url \n Failure Reason\n",
              "exception_backtrace":"A long string with the backtrace that contains the error and \n",
