@@ -41,6 +41,7 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
         }
         
         ```
+        
 5. Restart the Chef Automate server after saving the delivery.rb file.
 
 
