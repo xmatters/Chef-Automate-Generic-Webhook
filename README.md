@@ -48,7 +48,7 @@ Details of the installation go here.
 1. Run a Cookbook in Chef that will force the run to fail.
 2. A message should come through on your devices.  Which ever devices you have configured in xMatters.
 <kbd>
-<img src="media/DeviceMessage.png">
+<img src="media/Picture1.png">
 </kbd>
 
 # Troubleshooting
