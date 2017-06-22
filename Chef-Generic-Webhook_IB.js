@@ -4,19 +4,13 @@ http://chef-web-docs-notify.s3-website-us-west-2.amazonaws.com/config_rb_deliver
 
 var data;
 
-// If your data is posted as query string parameters or form post body
-data1 = request.parameters.payload;
-console.log('Body from Chef' + data1);
-data = JSON.parse(data1);
+data = JSON.parse(request.body);
 
-var statusf = data.text;
-var status = statusf.substring(1,24);
+// Parse data from incoming payload and construct the trigger object.  This is not needed.  The json and form properties/fields
+// already match.
+//trigger.properties.failure_snippet = data.failure_snippet;
 
-// Parse data from incoming payload and construct the trigger object
-trigger.properties.host = data.attachments[0].fallback;
-trigger.properties.status = status;
-trigger.properties.summary = data.attachments[0].text;
-
+trigger.properties = data
 
 // Define recipients
 var recipients = [];
@@ -29,3 +23,5 @@ trigger.recipients = recipients;
 
 // Post trigger to form
 form.post(trigger);
+
+
