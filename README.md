@@ -20,7 +20,7 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
           notifier['enable'] = true
           notifier['user_webhook_url'] = 'https://[xmatters instance]/api/integration/1/functions/7ae4d0e1-10bd-4c63-bf60-9a862a0abf18/triggers'    
       ```
-4. The following is a sample notification message body:
+The following is a sample notification message body:
 
       ``` 
       
@@ -40,15 +40,21 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
         
         ```
         
-5. Restart the Chef Automate server after saving the delivery.rb file.
+3. Restart the Chef Automate server after saving the delivery.rb file.
 
 
 
 ## xMatters set up
 1. Import the Communication Plan (see files).  If this step is done you can skip steps 2.
-2. Create (In|Out)bound integration and add the code from the Chef-Generic-Webhook_IB.js file.
-3. Configure the xMatters Endpoints. [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm)
-4. Create a chef group in xMatters and add your self to the group. [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm).  The name of the chef group can be changed in the Inbound IB script.
+2. Configure the xMatters Endpoints.  Endpoints provide a simple way to define the base URL and authentication credentials to use when making HTTP requests from a transformation script. [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm)
+3. Create a chef group in xMatters and add your self to the group.  Groups allow you to notify a set of users, devices, dynamic teams and other groups as a single recipient. Groups may be simple collections of members or they can employ complex shift schedules, escalation time lines, and rotations to allow you to notify only the members that are actively on duty. [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm).  The name of the chef group can be changed in the Inbound IB script.
+```
+      var recipients = [];
+      // Add a recipient targeting a user or group
+      recipients.push({
+            'targetName': 'chef'
+      });
+```
   
 # Testing
 1. Run a Cookbook in Chef that will force the run to fail.
