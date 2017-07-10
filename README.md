@@ -18,7 +18,7 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 2. The attached delivery.rb file is an example of the configured settings pointing to a xMatters instance.  The following lines in the delivery.rb file are what send the information from Chef Automate to xMatters during an error.
       ``` 
           notifier['enable'] = true
-notifier['user_webhook_url'] = 'https://[xmatters instance]/api/integration/1/functions/7ae4d0e1-10bd-4c63-bf60-9a862a0abf18/triggers'    
+          notifier['user_webhook_url'] = 'https://[xmatters instance]/api/integration/1/functions/7ae4d0e1-10bd-4c63-bf60-9a862a0abf18/triggers'    
       ```
 4. The following is a sample notification message body:
 
