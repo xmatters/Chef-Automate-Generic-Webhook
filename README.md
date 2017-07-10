@@ -60,10 +60,7 @@ The following is a sample notification message body:
 1. Run a Cookbook in Chef that will force the run to fail.
 2. A message should come through on your devices.  Which ever devices you have configured in xMatters.
 <kbd>
-<img src="media/devicemessage1.png">
-</kbd>
-<kbd>
-<img src="media/devicemessage2.png">
+<img src="media/devicemessage.png">
 </kbd>
 
 # Troubleshooting
