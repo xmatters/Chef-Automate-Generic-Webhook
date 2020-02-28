@@ -4,7 +4,9 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 ---------
 
 <kbd>
+  <a href="https://support.xmatters.com/hc/en-us/community/topics">
   <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+  </a>
 </kbd>
 
 ---------
@@ -14,11 +16,11 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 * Chef Automate v 3.x or higher.  The Generic Webhook is new functionality.  See the following Chef documentation for instructions on how to configure the Notifier settings in the delivery.rb file of the Chef Automate server.  [delivery.rb Chef Help Docs](http://chef-web-docs-notify.s3-website-us-west-2.amazonaws.com/config_rb_delivery.html#notifier-settings)
 * Chef Automate Generic Webhook configured.  
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
-* xMatters ChefAutomateGenericWebhook Communication Plan (see zip file in above files) imported into xMatters or created in xMatters.
+* xMatters ChefAutomateGenericWebhook workflow (see zip file in above files) imported into xMatters or created in xMatters.
 
 # Files
 * [Chef-Generic-Webhook_IB.js](Chef-Generic-Webhook_IB.js) - The javascript file to be pasted into a Inbound Integration Builder. It takes the payload from Chef and formats the content to match the xMatters Form requirements and creates an xMatters Event. 
-* [ChefAutomateGenericWebhook.zip](ChefAutomateGenericWebhook.zip) - The comm plan that has all the cool scripts and email format and such. 
+* [ChefAutomateGenericWebhook.zip](ChefAutomateGenericWebhook.zip) - The workflow that has all the cool scripts and email format and such. 
 
 # Installation
 
@@ -54,7 +56,7 @@ The following is a sample notification message body:
 
 
 ## xMatters set up
-1. Import the Communication Plan (see files).  If this step is done you can skip steps 2.
+1. Import the workflow (see files).  If this step is done you can skip steps 2.
 2. Configure the xMatters Endpoints.  Endpoints provide a simple way to define the base URL and authentication credentials to use when making HTTP requests from a transformation script. [xMatters Endpoints](https://help.xmatters.com/OnDemand/xmodwelcome/integrationbuilder/configure-endpoints.htm)
 3. Create a chef group in xMatters and add your self to the group.  Groups allow you to notify a set of users, devices, dynamic teams and other groups as a single recipient. Groups may be simple collections of members or they can employ complex shift schedules, escalation time lines, and rotations to allow you to notify only the members that are actively on duty. [xMatters Groups](https://help.xmatters.com/OnDemand/groups/groups.htm).  The name of the chef group can be changed in the Inbound IB script.
 ```
